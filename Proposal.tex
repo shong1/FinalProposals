@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\usepackage{upgreek}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{stmaryrd}
+\usepackage{cite}
+
+
+
+\graphicspath{{/ReportImg}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.tif}
+
+%opening
+\title{3D Computer Vision \\ Final Project Proposal}
+\author{Sungmin Hong}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+The main theme of the final project is reconstructing 3D face from multiple sources. 
+The first part of the project follows a framework suggested in the `Face reconstruction from the wild'~\cite{Kemel2011}.
+The authors proposed the 3D face reconstruction method from large unstructured image collections, such as, images from google search or personal photo collections. 
+
+\section{Algorithm Overview}
+
+\noindent \textbf{Normalize Face Images \\} 
+
+Since images from internet or personal collections are unstructured, we need to normalize each image to a canonical face, which is frontal view of a face.
+In ~\cite{Kemel2011}, they used a fiducial-based approach to normalize faces. They first detect a face in the image by using the object detection method using the soft cascade method~\cite{Bourdev05}.
+Fiducial points of a face, such as, corners of eyes, nostrils, tip of a nose, and etc. are extracted from the detected region by using the fiducial points detection method ~\cite{Everingham06}. 
+The matlab codes for the face detection method is provided by the matlab package and the fiducial points detection method is provided in the matlab Computer Vision package. 
+
+Let $q$ and $Q$ be the fiducials in 2D images and the 3D template shape. 
+They assumed 2D points in each image are the weak perspective projection of 3D points on the template surface. 
+
+\begin{equation}
+    q = P_wQ = [ sR | t ]Q \\    
+\label{eq1_1}
+\end{equation}
+
+To estimate $P_w$, they subtracted the centroid and calculate the pseudo-inverse of relative positions of 3D points.
+
+
+
+
+
+
+
+\noindent \textbf{Initial Lighting and Shape Estimation \\}
+
+
+
+
+\noindent \textbf{Surface Refinement using Local Shape Estimation \\}
+
+\noindent \textbf{Ambiguity Recovery \\}
+
+\noindent \textbf{Integration \\}
+
+\noindent \textbf{Update Template Surface \\}
+
+
+
+\bibliography{Proposal}{}
+\bibliographystyle{plain}
+\end{document}

@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bourdev05}
+Lubomir~D. Bourdev and Jonathan Brandt.
+\newblock {Robust Object Detection via Soft Cascade.}
+\newblock In {\em {CVPR (2)}}, pages 236--243. IEEE Computer Society, 2005.
+
+\bibitem{Everingham06}
+Mark Everingham, Josef Sivic, and Andrew Zisserman.
+\newblock {Hello! My name is... Buffy'' -- Automatic Naming of Characters in TV
+  Video.}
+\newblock In Mike~J. Chantler, Robert~B. Fisher, and Emanuele Trucco, editors,
+  {\em {BMVC}}, pages 899--908. British Machine Vision Association, 2006.
+
+\bibitem{Kemel2011}
+Ira Kemelmacher-Shlizerman and Steven~M. Seitz.
+\newblock {Face reconstruction in the wild.}
+\newblock In Dimitris~N. Metaxas, Long Quan, Alberto Sanfeliu, and Luc J.~Van
+  Gool, editors, {\em {ICCV}}, pages 1746--1753. IEEE, 2011.
+
+\end{thebibliography}
