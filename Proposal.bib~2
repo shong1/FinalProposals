@@ -18,6 +18,43 @@
 	year = 2011
 }
 
+@inproceedings{Bourdev05,
+	abstract = "dblp",
+	added-at = "2005-07-27T00:00:00.000+0200",
+	author = "Bourdev, Lubomir D. and Brandt, Jonathan",
+	booktitle = "{CVPR (2)}",
+	crossref = "conf/cvpr/2005",
+	date = "2005-07-27",
+	interhash = "23a0a9732e2d586ad3cfed98a8644668",
+	intrahash = "7d7f7e7baab43295c75942a535d5408a",
+	isbn = "0-7695-2372-2",
+	keywords = "dblp",
+	pages = "236--243",
+	publisher = "IEEE Computer Society",
+	title = "{Robust Object Detection via Soft Cascade.}",
+	url = "http://dblp.uni-trier.de/db/conf/cvpr/cvpr2005-2.html#BourdevB05; http://dx.doi.org/10.1109/CVPR.2005.310; http://www.bibsonomy.org/bibtex/27d7f7e7baab43295c75942a535d5408a/dblp",
+	x-fetchedfrom = "Bibsonomy",
+	year = 2005
+}
+
+@inproceedings{Everingham06,
+	added-at = "2011-05-26T00:00:00.000+0200",
+	author = "Everingham, Mark and Sivic, Josef and Zisserman, Andrew",
+	booktitle = "{BMVC}",
+	crossref = "conf/bmvc/2006",
+	editor = "Chantler, Mike J. and Fisher, Robert B. and Trucco, Emanuele",
+	interhash = "61c58df174180a88679ecc62d6156ae4",
+	intrahash = "443e31c7beaf417a0873491b17b9d8ef",
+	isbn = "1-904410-14-6",
+	keywords = "dblp",
+	pages = "899--908",
+	publisher = "British Machine Vision Association",
+	title = "{Hello! My name is... Buffy'' -- Automatic Naming of Characters in TV Video.}",
+	url = "http://dblp.uni-trier.de/db/conf/bmvc/bmvc2006.html#EveringhamSZ06; http://www.macs.hw.ac.uk/bmvc2006/papers/340.pdf; http://www.bibsonomy.org/bibtex/2443e31c7beaf417a0873491b17b9d8ef/dblp",
+	x-fetchedfrom = "Bibsonomy",
+	year = 2006
+}
+
 @inproceedings{Kemel2010,
 	acmid = "1886090",
 	address = "Berlin, Heidelberg",
@@ -53,6 +90,62 @@
 	url = "http://doi.acm.org/10.1145/2647750",
 	volume = "57",
 	x-fetchedfrom = "ACM Digital Library",
+	year = "2014"
+}
+
+@inproceedings{Basri01,
+	abstract = "Work on photometric stereo has shown how to recover the shape and reflectance properties of an object using multiple images taken with a fixed viewpoint and variable lighting conditions. This work has primarily relied on the presence of a single point source of light in each image. The authors show how to perform photometric stereo, assuming that all lights in a scene are isotropic and distant from the object but otherwise unconstrained. Lighting in each image may be an unknown and arbitrary combination of diffuse, point and extended sources. Our work is based on recent results showing that for Lambertian objects, general lighting conditions can be represented using low order spherical harmonics. Using this representation, we can recover shape by performing a simple optimization in a low-dimensional space. We also analyze the shape ambiguities that arise in such a representation.",
+	arnumber = "990985",
+	author = "Basri, R. and Jacobs, D.",
+	booktitle = "{Computer Vision and Pattern Recognition, 2001. CVPR 2001. Proceedings of the 2001 IEEE Computer Society Conference on}",
+	doi = "10.1109/CVPR.2001.990985",
+	issn = "1063-6919",
+	keywords = "image recognition; image representation; lighting; photometry; stereo image processing; Lambertian objects; arbitrary combination; extended sources; fixed viewpoint; general lighting conditions; general unknown lighting; low order spherical harmonics; low-dimensional space; multiple images; photometric stereo; reflectance properties; shape ambiguities; shape properties; shape recovery; simple optimization; single point light source; variable lighting conditions; Computer science; Jacobian matrices; Laboratories; Layout; Lighting control; National electric code; Photometry; Reflectivity; Shape; Surface fitting",
+	pages = "II--374--II--381 vol.2",
+	title = "{Photometric stereo with general, unknown lighting}",
+	volume = "2",
+	x-fetchedfrom = "IEEEXplore",
+	year = "2001"
+}
+
+@article{YuilleSEB99,
+	abstract = "dblp",
+	added-at = "2008-08-11T00:00:00.000+0200",
+	author = "Yuille, Alan L. and Snow, Daniel and Epstein, Russell and Belhumeur, Peter N.",
+	date = "2008-08-11",
+	interhash = "8079a185112f658d0c61e9566d3208f0",
+	intrahash = "65f85216a339dbbfca2ac14b8dd4048c",
+	journal = "International Journal of Computer Vision",
+	keywords = "dblp",
+	number = 3,
+	pages = "203--222",
+	title = "{Determining Generative Models of Objects Under Varying Illumination: Shape and Albedo from Multiple Images Using SVD and Integrability.}",
+	url = "http://dblp.uni-trier.de/db/journals/ijcv/ijcv35.html#YuilleSEB99; http://dx.doi.org/10.1023/A:1008180726317; http://www.bibsonomy.org/bibtex/265f85216a339dbbfca2ac14b8dd4048c/dblp",
+	volume = 35,
+	x-fetchedfrom = "Bibsonomy",
+	year = 1999
+}
+
+@article{FramkotC88,
+	added-at = "2011-11-07T00:00:00.000+0100",
+	author = "Frankot, Robert T. and Chellappa, Rama",
+	interhash = "f5736a9dfa6bb6ea257eb29d9c962741",
+	intrahash = "47c302300764e65115efcea3ba174ba0",
+	journal = "IEEE Trans. Pattern Anal. Mach. Intell.",
+	keywords = "dblp",
+	number = 4,
+	pages = "439--451",
+	title = "{A Method for Enforcing Integrability in Shape from Shading Algorithms.}",
+	url = "http://dblp.uni-trier.de/db/journals/pami/pami10.html#FramkotC88; http://doi.ieeecomputersociety.org/10.1109/34.3909; http://www.bibsonomy.org/bibtex/247c302300764e65115efcea3ba174ba0/dblp",
+	volume = 10,
+	x-fetchedfrom = "Bibsonomy",
+	year = 1988
+}
+
+@article{Suwaj2014,
+	author = "S., Suwajanakorn and I., Kemelmacher-Shilzerman and {S. M.}, Seitz",
+	journal = "ECCV",
+	title = "{Total Moving Face Reconstruction}",
 	year = "2014"
 }
 

@@ -10,7 +10,8 @@
 \usepackage{stmaryrd}
 \usepackage{cite}
 
-
+%For Matrix horizontal line
+\usepackage{booktabs}
 
 \graphicspath{{/ReportImg}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.tif}
@@ -49,24 +50,89 @@ They assumed 2D points in each image are the weak perspective projection of 3D p
 
 To estimate $P_w$, they subtracted the centroid and calculate the pseudo-inverse of relative positions of 3D points.
 
+\begin{equation}
+ \tilde{q} = q - \bar{q} \qquad \tilde{Q} = Q - \bar{Q} \\
+\end{equation}
 
+\begin{equation}
+ A = \tilde{q}\tilde{Q}^T( \tilde{Q}\tilde{Q}^T )^{-1} \\
+\end{equation}
 
+where $\bar{q}$ and $\bar{Q}$ are the mean of $q$ and $Q$. 
+And the translation $t$ is defined as follows.
 
+\begin{equation}
+ t = \bar{q} - A\tilde{Q} \\
+\end{equation}
+e
+$s$ and $R$ are recovered by estimating the singular values of $A$. 
+Since the $R$ and $s$ is 3D translation and scaling, we add a row, which is the cross product of $A_1$ and $A_2$, and do the singular value decomposition.
 
+\begin{equation}
+  A' = \begin{bmatrix} A \\ \cmidrule(lr){1-1} A_1 \times A_2  \end{bmatrix} = U_AD_AV_A^T \\
+\end{equation}
 
+Then the rotation $R = U_AV_A^T$ and the two identical singular value becomes $s$.
 
 \noindent \textbf{Initial Lighting and Shape Estimation \\}
 
-
-
+Let $I_i$ be the $i$ th canonical face image of size $N$ and $M$ is the concatenated matrix of $K$ images.
+Then $M$ is $N \times K$ matrix which contain all canonical face images with different lighting conditions.
+The uncalibrated photometric stereo reconstruction method using the singular value decomposition method ~\cite{YuilleSEB99} 
+take rank-4 approximation to get $M = LS$, where $n \times 4$ matrix $L = U_M \sqrt{D_M}$ and $4\times K$ matrix $S = \sqrt{D_M}V_M^T$.
+$L$ and $S$ represent the light source directions and the surface properties, which are albedo and the surface normals, respectively.  \\
 
 \noindent \textbf{Surface Refinement using Local Shape Estimation \\}
 
+The surface $S$ reconstructed from the rank-4 approximation lose details by nature. 
+To overcome the over smoothing problem, the local patches of an image are used to update $L$ and $S$.
+Thus the distance at pixel $j$ is represented as follows, 
+
+\begin{equation}
+ d_j = |M_j - LS_j|^2 \\
+\end{equation}
+
+where $M_j$ is a $n \times 1$ vector representing the intensities of a pixel $j$ in all $K$ images. Then normalize the distance $d_j$ and select $k > 4$ images under the threshold. 
+With $k$ iamges the surface structure at $j$ th pixel is estimated by minimizing
+
+\begin{equation}
+ \min_{S_j} ||M_{k \times 1} - L_{k \times 4}S_j || + S_j^TGS_j  \\
+\end{equation}
+
+where $G = diag( -1, 1, 1, 1 )$ for Tikhonov regularization. 
+
+Then $S_j$ has a closed form solution, 
+
+\begin{equation}
+ S_j = (L_{k\times4}^TL_{k \times4} + G)^{-1}L^TM_{k\times1} \\
+\end{equation}
+
+
 \noindent \textbf{Ambiguity Recovery \\}
+
+The rank-4 approximation of the surface properties and the lighting condition has $4\times4$ ambiguity since $M = LS$ can be  $M = LA^{-1}AS$ with an invertible $4 \times 4$ matrix $A$.
+The ambiguity may lead to the surface to be non-integrable.
+The ambiguity can be resolved by minimizing the energy between the template surface and the estimated surface property. 
+
+\begin{equation}
+ \min_{A}{ || S_t - AS ||^2 } \\
+\end{equation}
+
+where $A$ is $4 \times 4$ ambiguity and $S_t$ is the surface property of the template shape. 
+Then $L$ is updated to $L' = LA^{-1}$ and $S' = AS$. \\
 
 \noindent \textbf{Integration \\}
 
-\noindent \textbf{Update Template Surface \\}
+In theiry paper, they used the simple integration method, but it looks possible to use Chellappa's method~\cite{FramkotC88}.
+Then we have an updated surface $S_{t+1}$ and use the updated surface as a new template surface and iterate the algorithm until convergence.
+
+\section*{Discussion}
+
+The proposed final project is about 3D face reconstruction from an unstructured image collection of the person.
+The framework follows the method proposed in ~\cite{Kemel2011}. 
+The project will be extended to 3D face video reconstruction as suggested in ~\cite{Suwaj2014} which reconstructs the 3D face in a single video frame if time allows. 
+Also, the work may be extended to reconstruction of an unseen part of a face in an image or a video using matrix factorization method and surface registration method.
+
 
 
 

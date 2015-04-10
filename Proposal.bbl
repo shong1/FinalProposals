@@ -12,10 +12,29 @@ Mark Everingham, Josef Sivic, and Andrew Zisserman.
 \newblock In Mike~J. Chantler, Robert~B. Fisher, and Emanuele Trucco, editors,
   {\em {BMVC}}, pages 899--908. British Machine Vision Association, 2006.
 
+\bibitem{FramkotC88}
+Robert~T. Frankot and Rama Chellappa.
+\newblock {A Method for Enforcing Integrability in Shape from Shading
+  Algorithms.}
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, 10(4):439--451, 1988.
+
 \bibitem{Kemel2011}
 Ira Kemelmacher-Shlizerman and Steven~M. Seitz.
 \newblock {Face reconstruction in the wild.}
 \newblock In Dimitris~N. Metaxas, Long Quan, Alberto Sanfeliu, and Luc J.~Van
   Gool, editors, {\em {ICCV}}, pages 1746--1753. IEEE, 2011.
+
+\bibitem{Suwaj2014}
+Suwajanakorn S., Kemelmacher-Shilzerman I., and Seitz {S. M.}
+\newblock {Total Moving Face Reconstruction}.
+\newblock In {\em {Computer Vision - ECCV 2014}}, volume 8692 of {\em {Lecture
+  Notes in Computer Science}}, pages 796--812. Springer International
+  Publishing, 2014.
+
+\bibitem{YuilleSEB99}
+Alan~L. Yuille, Daniel Snow, Russell Epstein, and Peter~N. Belhumeur.
+\newblock {Determining Generative Models of Objects Under Varying Illumination:
+  Shape and Albedo from Multiple Images Using SVD and Integrability.}
+\newblock {\em International Journal of Computer Vision}, 35(3):203--222, 1999.
 
 \end{thebibliography}

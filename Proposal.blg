@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Proposal.aux
+The style file: plain.bst
+Database file #1: Proposal.bib
+A bad cross reference---entry "Kemel2011"
+refers to entry "conf/iccv/2011", which doesn't exist
+A bad cross reference---entry "Bourdev05"
+refers to entry "conf/cvpr/2005", which doesn't exist
+A bad cross reference---entry "Everingham06"
+refers to entry "conf/bmvc/2006", which doesn't exist
+Warning--I didn't find a database entry for "conf/iccv/2011"
+Warning--I didn't find a database entry for "conf/cvpr/2005"
+Warning--I didn't find a database entry for "conf/bmvc/2006"
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            552 strings with 5352 characters,
+and the built_in function-call counts, 2839 in all, are:
+= -- 291
+> -- 123
+< -- 5
++ -- 45
+- -- 39
+* -- 199
+:= -- 431
+add.period$ -- 22
+call.type$ -- 6
+change.case$ -- 34
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 117
+empty$ -- 225
+format.name$ -- 39
+if$ -- 634
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 16
+pop$ -- 37
+preamble$ -- 1
+purify$ -- 28
+quote$ -- 0
+skip$ -- 96
+stack$ -- 0
+substring$ -- 212
+swap$ -- 50
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 29
+width$ -- 7
+write$ -- 73
+(There were 3 error messages)

@@ -126,33 +126,3 @@
 	year = 1999
 }
 
-@article{FramkotC88,
-	added-at = "2011-11-07T00:00:00.000+0100",
-	author = "Frankot, Robert T. and Chellappa, Rama",
-	interhash = "f5736a9dfa6bb6ea257eb29d9c962741",
-	intrahash = "47c302300764e65115efcea3ba174ba0",
-	journal = "IEEE Trans. Pattern Anal. Mach. Intell.",
-	keywords = "dblp",
-	number = 4,
-	pages = "439--451",
-	title = "{A Method for Enforcing Integrability in Shape from Shading Algorithms.}",
-	url = "http://dblp.uni-trier.de/db/journals/pami/pami10.html#FramkotC88; http://doi.ieeecomputersociety.org/10.1109/34.3909; http://www.bibsonomy.org/bibtex/247c302300764e65115efcea3ba174ba0/dblp",
-	volume = 10,
-	x-fetchedfrom = "Bibsonomy",
-	year = 1988
-}
-
-@inproceedings{Suwaj2014,
-	author = "S., Suwajanakorn and I., Kemelmacher-Shilzerman and {S. M.}, Seitz",
-	booktitle = "{Computer Vision - ECCV 2014}",
-	isbn = "978-3-319-10592-5",
-	issn = "0302-9743",
-	journal = "ECCV",
-	pages = "796-812",
-	publisher = "Springer International Publishing",
-	series = "{Lecture Notes in Computer Science}",
-	title = "{Total Moving Face Reconstruction}",
-	volume = "8692",
-	year = "2014"
-}
-

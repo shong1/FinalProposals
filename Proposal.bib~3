@@ -142,17 +142,3 @@
 	year = 1988
 }
 
-@inproceedings{Suwaj2014,
-	author = "S., Suwajanakorn and I., Kemelmacher-Shilzerman and {S. M.}, Seitz",
-	booktitle = "{Computer Vision - ECCV 2014}",
-	isbn = "978-3-319-10592-5",
-	issn = "0302-9743",
-	journal = "ECCV",
-	pages = "796-812",
-	publisher = "Springer International Publishing",
-	series = "{Lecture Notes in Computer Science}",
-	title = "{Total Moving Face Reconstruction}",
-	volume = "8692",
-	year = "2014"
-}
-

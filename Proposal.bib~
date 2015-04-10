@@ -93,6 +93,66 @@
 	year = "2014"
 }
 
-@article{New1
+@inproceedings{Basri01,
+	abstract = "Work on photometric stereo has shown how to recover the shape and reflectance properties of an object using multiple images taken with a fixed viewpoint and variable lighting conditions. This work has primarily relied on the presence of a single point source of light in each image. The authors show how to perform photometric stereo, assuming that all lights in a scene are isotropic and distant from the object but otherwise unconstrained. Lighting in each image may be an unknown and arbitrary combination of diffuse, point and extended sources. Our work is based on recent results showing that for Lambertian objects, general lighting conditions can be represented using low order spherical harmonics. Using this representation, we can recover shape by performing a simple optimization in a low-dimensional space. We also analyze the shape ambiguities that arise in such a representation.",
+	arnumber = "990985",
+	author = "Basri, R. and Jacobs, D.",
+	booktitle = "{Computer Vision and Pattern Recognition, 2001. CVPR 2001. Proceedings of the 2001 IEEE Computer Society Conference on}",
+	doi = "10.1109/CVPR.2001.990985",
+	issn = "1063-6919",
+	keywords = "image recognition; image representation; lighting; photometry; stereo image processing; Lambertian objects; arbitrary combination; extended sources; fixed viewpoint; general lighting conditions; general unknown lighting; low order spherical harmonics; low-dimensional space; multiple images; photometric stereo; reflectance properties; shape ambiguities; shape properties; shape recovery; simple optimization; single point light source; variable lighting conditions; Computer science; Jacobian matrices; Laboratories; Layout; Lighting control; National electric code; Photometry; Reflectivity; Shape; Surface fitting",
+	pages = "II--374--II--381 vol.2",
+	title = "{Photometric stereo with general, unknown lighting}",
+	volume = "2",
+	x-fetchedfrom = "IEEEXplore",
+	year = "2001"
+}
+
+@article{YuilleSEB99,
+	abstract = "dblp",
+	added-at = "2008-08-11T00:00:00.000+0200",
+	author = "Yuille, Alan L. and Snow, Daniel and Epstein, Russell and Belhumeur, Peter N.",
+	date = "2008-08-11",
+	interhash = "8079a185112f658d0c61e9566d3208f0",
+	intrahash = "65f85216a339dbbfca2ac14b8dd4048c",
+	journal = "International Journal of Computer Vision",
+	keywords = "dblp",
+	number = 3,
+	pages = "203--222",
+	title = "{Determining Generative Models of Objects Under Varying Illumination: Shape and Albedo from Multiple Images Using SVD and Integrability.}",
+	url = "http://dblp.uni-trier.de/db/journals/ijcv/ijcv35.html#YuilleSEB99; http://dx.doi.org/10.1023/A:1008180726317; http://www.bibsonomy.org/bibtex/265f85216a339dbbfca2ac14b8dd4048c/dblp",
+	volume = 35,
+	x-fetchedfrom = "Bibsonomy",
+	year = 1999
+}
+
+@article{FramkotC88,
+	added-at = "2011-11-07T00:00:00.000+0100",
+	author = "Frankot, Robert T. and Chellappa, Rama",
+	interhash = "f5736a9dfa6bb6ea257eb29d9c962741",
+	intrahash = "47c302300764e65115efcea3ba174ba0",
+	journal = "IEEE Trans. Pattern Anal. Mach. Intell.",
+	keywords = "dblp",
+	number = 4,
+	pages = "439--451",
+	title = "{A Method for Enforcing Integrability in Shape from Shading Algorithms.}",
+	url = "http://dblp.uni-trier.de/db/journals/pami/pami10.html#FramkotC88; http://doi.ieeecomputersociety.org/10.1109/34.3909; http://www.bibsonomy.org/bibtex/247c302300764e65115efcea3ba174ba0/dblp",
+	volume = 10,
+	x-fetchedfrom = "Bibsonomy",
+	year = 1988
+}
+
+@article{Suwaj2014,
+	author = "S., Suwajanakorn and I., Kemelmacher-Shilzerman and {S. M.}, Seitz",
+	booktitle = "{Computer Vision - ECCV 2014}",
+	isbn = "978-3-319-10592-5",
+	issn = "0302-9743",
+	journal = "ECCV",
+	pages = "796-812",
+	publisher = "Springer International Publishing",
+	series = "{Lecture Notes in Computer Science}",
+	title = "{Total Moving Face Reconstruction}",
+	volume = "8692",
+	year = "2014"
 }
 
